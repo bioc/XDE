@@ -1,2 +1,3 @@
 *.o
 /src/XDE.so
+/src/symbols.rds

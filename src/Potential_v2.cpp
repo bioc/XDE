@@ -872,8 +872,8 @@ double potentialEta0(double eta0,double alphaEta,double betaEta) {
 
 double potentialOmega0(double omega0,double pOmega0,double lambdaOmega) {
   double pot = 0.0;
-  
-  if (omega0 = 0.0)
+
+  if (omega0 == 0.0)
     pot += - log(pOmega0);
   else {
     pot += - log(1.0 - pOmega0);
