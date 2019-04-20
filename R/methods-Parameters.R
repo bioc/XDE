@@ -351,11 +351,11 @@ setReplaceMethod("[[", "Parameters", function(x,i,j,...,value){
 	x
 })
 
-setMethod("dims", "Parameters", function(object){
-	nms <- slotNames(object)
+setMethod("dims", "Parameters", function(x){
+	nms <- slotNames(x)
 	L <- length(nms)
 	res <- rep(NA, L)
-	for(i in seq_len(L)) res[i] <- length(slot(object, nms[i]))
+	for(i in seq_len(L)) res[i] <- length(slot(x, nms[i]))
 	names(res) <- nms
 	return(res)
 })
