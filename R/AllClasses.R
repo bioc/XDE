@@ -7,7 +7,7 @@ validityMethod <- function(object){
 	}
 	##featureNames should be identical for all elements of the list.
 	fnList <- sapply(object, featureNames)
-	if(class(fnList) != "matrix") {
+	if(class(fnList)[[1]] != "matrix") {
 		return("all objects in ExpressionSetList must have the same number of features")
 	}
 

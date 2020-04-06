@@ -254,7 +254,7 @@ symbolsInteresting <- function(rankingStatistic, percentile=0.9,
 
 ##statistic should be the standardized Delta
 xsScores <- function(statistic, N){
-	if(class(statistic) != "matrix") stop("study-specific statistics must be provided as a matrix")
+	if(class(statistic)[[1]] != "matrix") stop("study-specific statistics must be provided as a matrix")
 	if(missing(N)) stop("Must specify the sample size of each study")
 
 	scores <- matrix(NA, nrow(statistic), ncol=3)
