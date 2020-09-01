@@ -1,7 +1,6 @@
 \name{ExpressionSetList-class}
 \docType{class}
 \alias{ExpressionSetList-class}
-\alias{.integrativeCorrelationFilter,ExpressionSetList-method}
 \alias{[,ExpressionSetList-method}
 \alias{coerce,list,ExpressionSetList-method}
 \alias{dim,ExpressionSetList-method}
@@ -41,10 +40,6 @@ Objects can be created by calls of the form \code{new("ExpressionSetList", ...)}
 \section{Methods}{
   \describe{
 
-    \item{.integrativeCorrelationFilter}{\code{signature(object =
-  "ExpressionSetList")} Experimental function for filtering an arbitrary
-  list of ExpressionSets by integrative correlation.  Genes are excluded
-  that do not exceed the fdr threshold in at least 1 of the studies.}
 
 \item{"["}{\code{signature(x = "ExpressionSetList")} Subsets each
   \code{ExpressionSet} element in the list.}
